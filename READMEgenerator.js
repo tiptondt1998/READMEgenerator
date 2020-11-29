@@ -71,10 +71,8 @@ const generatePage = (answers) => {
     // </html>
     // `;
     return `
-    
     # ${answers.name}
     ## Description
     ${answers.description}
-    
     `
   };
