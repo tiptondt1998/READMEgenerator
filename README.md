@@ -1,12 +1,12 @@
-# readme generator
+# READMEgenerator
 ## Github
-https://github.com/tiptondt1998/readme generator
+https://github.com/tiptondt1998/READMEgenerator
 ## Description
-generates professional readme file
+generates professional readme markdown file
 ## Installation
  run npm command
 ## Usage
-use node command
+run node command
 ## License
 none
 ## Credits
