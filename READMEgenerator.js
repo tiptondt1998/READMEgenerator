@@ -79,6 +79,14 @@ const generatePage = (answers) => {
     // </html>
     // `;
 return `# ${answers.name}
+## Table of Contents
+* [Github](README.md/#Github)
+* [Description](README.md/#Description)
+* [Installation](README.md/#Installation)
+* [Usage](README.md/#Usage)
+* [License](README.md/#License)
+* [Credits](README.md/#Credits)
+* [Questions](README.md/#Questions)
 ## Github
 https://github.com/${answers.uname}/${answers.name}
 ## Description
