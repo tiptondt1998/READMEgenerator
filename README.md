@@ -1,4 +1,4 @@
-# test
+# READMEgenerator
 ## Table of Contents
 * [Github](README.md/#Github)
 * [Description](README.md/#Description)
@@ -8,16 +8,16 @@
 * [Credits](README.md/#Credits)
 * [Questions](README.md/#Questions)
 ## Github
-https://github.com/test/test
+https://github.com/tiptondt1998/READMEgenerator
 ## Description
-test
+generates professional readme markdown file
 ## Installation
- test
+ none
 ## Usage
-test
+run node command
 ## License
 none
 ## Credits
-test
+tiptondt1998
 ## Questions
-Contact me at: test
+Contact me at: dylan.tipton@live.com
