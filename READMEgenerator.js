@@ -16,32 +16,40 @@ Add a New Project
       message: 'What is the name of your project?'
     },
     {
+     type: 'input',
+     name: 'uname',
+     message: 'Enter your Github username' 
+    },
+    {
       type: 'input',
       name: 'description',
       message: 'Provide a description of the project (Required)'
     },
     {
-      type: 'checkbox',
-      name: 'languages',
-      message: 'What did you build this project with? (Check all that apply)',
-      choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node']
+      type: 'input',
+      name: 'installation',
+      message: 'List all installation setps to your project',
     },
     {
       type: 'input',
-      name: 'username',
-      message: 'Enter your Github username. (Required)',
+      name: 'usage',
+      message: 'Provide instructions for use.',
     },
     {
-      type: 'confirm',
-      name: 'feature',
-      message: 'Would you like to feature this project?',
-      default: false
-      },
+      type: 'list',
+      name: 'license',
+      message: 'Choose a license for this project',
+      choices: ['none', 'apache 2.0', 'GNU General Public License v3.0', 'MIT License']
+    },
     {
-      type: 'confirm',
-      name: 'confirmAddProject',
-      message: 'Would you like to enter another project?',
-      default: false
+      type: 'input',
+      name: 'credits',
+      message: 'Name all contributors to this project seperated by a space.',
+      },
+      {
+        type: 'input',
+        name: 'email',
+        message: 'Enter your email address'
       }
   ]);
 };
@@ -70,9 +78,20 @@ const generatePage = (answers) => {
     // </body>
     // </html>
     // `;
-    return `
-    # ${answers.name}
-    ## Description
-    ${answers.description}
-    `
+return `# ${answers.name}
+## Github
+https://github.com/${answers.uname}/${answers.name}
+## Description
+${answers.description}
+## Installation
+ ${answers.installation}
+## Usage
+${answers.usage}
+## License
+${answers.license}
+## Credits
+${answers.credits}
+## Questions
+Contact me at: ${answers.email}
+`
   };
